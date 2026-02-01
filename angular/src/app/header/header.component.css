@@ -1,0 +1,63 @@
+/* header.component.css */
+
+/* הגדרת ה-header */
+header {
+  background-color: #35b2c0b2; /* צבע רקע כהה */
+  color: white; /* צבע טקסט בהיר */
+  padding: 15px 0; /* רווחים מעל ומתחת */
+  position: fixed; /* הצמדת ה-header לחלק העליון */
+  top: 0; /* צמוד לראש הדף */
+  left: 0; /* הצמדת ה-header לימין */
+  width: 100%; /* רוחב מלא */
+  z-index: 1000; /* הצבת ה-header מעל לשאר האלמנטים בעמוד */
+  box-shadow: 0px 4px 6px rgba(44, 153, 190, 0.1); /* הצללה עדינה */
+}
+ 
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+  color: aliceblue;
+}
+body {
+  overflow: hidden;  /* הסתרת גלגלת בגוף */
+}
+
+header {
+  position: relative;
+  height: auto;  /* מתאימים את הגובה של ההדר והפוטר */
+  overflow: hidden;  /* מונעים גלילה בהדר ובפוטר */
+}
+
+
+
+/*
+nav {
+  text-align: center;
+}
+
+nav a {
+  color: white; 
+  text-decoration: none; 
+  margin: 0 15px; 
+  font-size: 16px; 
+}
+
+nav a:hover {
+  color: #fdfdfd;
+  text-decoration: underline; 
+}
+
+@media (max-width: 768px) {
+  nav {
+    font-size: 14px;
+  }
+
+  header {
+    padding: 10px 0; 
+  }
+
+  nav a {
+    margin: 0 8px; 
+  }
+} */

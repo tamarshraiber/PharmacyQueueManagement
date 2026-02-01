@@ -1,0 +1,50 @@
+<div class="container">
+  <p class="title">hello, {{name}} 👋</p>
+
+  <form #addForm="ngForm">
+
+    <button style="margin-right: 1vw;" mat-raised-button color="accent" (click)="delete()">🗑️ Delete</button>
+    <button mat-raised-button color="primary" (click)="update()">
+      ✏️ Update
+    </button>
+
+    <div class="buttons">
+      <button mat-raised-button color="accent" (click)="showQueues()">
+        📋 Show the Queue
+      </button>
+      <button mat-raised-button color="primary" (click)="userInterface()">
+        👤 User Interface
+      </button>
+      <button mat-raised-button color="accent" (click)="showPharmacist()">
+        🏥 Show My Pharmacist
+      </button>
+      <button mat-raised-button color="primary" (click)="createPharmacist()">
+        ➕ Add Pharmacist
+      </button>
+
+      <button mat-raised-button color="accent" (click)="reset()">🔄️ Reset queue</button>
+    </div>
+  </form>
+
+
+  <div class="dialog-overlay" *ngIf="show">
+    <div class="dialog-content">
+      <div class="dialog-header">
+        <h2>pharmacist list</h2>
+        <button class="close-button" (click)="show = false">❌</button>
+      </div>
+
+      <div class="pharmacists-container">
+        @for (p of pharmacists; track $index) {
+        <mat-card class="pharmacist-card">
+          <mat-card-title>{{ p.name }}</mat-card-title>
+          <mat-card-actions>
+            <button mat-icon-button color="warn" (click)="deletePharmacist(p.id)">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </mat-card-actions>
+        </mat-card>}
+      </div>
+    </div>
+  </div>
+</div>

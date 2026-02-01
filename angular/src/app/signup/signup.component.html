@@ -1,0 +1,45 @@
+<label class="custom-label" style="font-size: 10vh; top: 10vh;">signup</label>
+
+<div class="form-container" style="top: 10vh;">
+  <form [formGroup]="myForm" (ngSubmit)="createPharmacy()">
+    <mat-form-field appearance="fill" class="input-field">
+      <mat-label>Manager Name</mat-label>
+      <input matInput id="manager" formControlName="manager" placeholder="Enter manager name">
+      @if(myForm.get('manager')?.invalid && myForm.get('manager')?.touched){
+
+      <mat-error>Invalid!</mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="input-field">
+      <mat-label>Station Count</mat-label>
+      <input matInput id="stationCount" formControlName="stationCount" placeholder="Enter station count">
+      @if(myForm.get('stationCount')?.invalid && myForm.get('stationCount')?.touched){
+
+      <mat-error>Invalid!</mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="input-field">
+      <mat-label>Password</mat-label>
+      <input matInput id="password" formControlName="password" placeholder="Enter password" type="password">
+      @if(myForm.get('password')?.invalid && myForm.get('password')?.touched){
+
+      <mat-error>Invalid!</mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="input-field">
+      <mat-label>Pharmacy Password</mat-label>
+      <input matInput id="pharmacyPassword" formControlName="pharmacyPassword" placeholder="Enter pharmacy password"
+        type="password">
+      @if(myForm.get('pharmacyPassword')?.invalid && myForm.get('pharmacyPassword')?.touched){
+
+      <mat-error>Invalid!</mat-error>
+      }
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit" [disabled]="myForm.invalid"
+      class="submit-button">Create</button>
+  </form>
+</div>

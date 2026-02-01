@@ -1,0 +1,17 @@
+<label class="custom-label">Station Status</label>
+<button class="back-button" (click)="back()"> ➡️ Back</button>
+
+<div class="queue-container">
+  <mat-card class="queue-card">
+    <div class="queue-list">
+      @for (s of stations; track $index) {
+      <div class="queue-number" [ngClass]="{'active': s.isActive, 'inactive': !s.isActive}">
+        {{ s.id }}
+        <button (click)="update(s.id)">
+          @if (s.isActive) { Deactivate } @else { Activate }
+        </button>
+      </div>
+      }
+    </div>
+  </mat-card>
+</div>

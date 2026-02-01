@@ -1,0 +1,22 @@
+<label class="custom-label" style="font-size: 10vh;">Add pharmacist</label>
+<div class="form-container">
+  <form [formGroup]="myForm" (ngSubmit)="createPharmacist()">
+    <mat-form-field class="input-field" appearance="fill" style="width: 100%; margin-bottom: 20px;">
+      <mat-label>pharmacist name</mat-label>
+      <input matInput id="name" formControlName="name" placeholder="enter pharmacist name">
+
+      @if(myForm.get('name')?.invalid && myForm.get('name')?.touched){
+
+      <mat-error>
+
+        Minimum 4 characters - required field
+      </mat-error>
+      }
+    </mat-form-field>
+
+    <button mat-raised-button color="accent" type="submit" [disabled]="myForm.invalid" class="submit-button">
+      create pharmacist
+    </button>
+  </form>
+  <button class="back-button" (click)="back()"> ➡️ Back</button>
+</div>

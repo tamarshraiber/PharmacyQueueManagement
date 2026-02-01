@@ -1,0 +1,106 @@
+
+
+  .custom-label {
+    position: absolute;
+    top: 14vh;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10vh;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #35b2c0b2;
+    text-shadow: 1px 1px 2px black, -1px -1px 2px black;
+  }
+  
+  .queue-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30vh;
+  }
+  
+  .queue-card {
+    background: rgb(195, 223, 221);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    width: 60%;
+    text-align: center;
+  }
+  
+  .queue-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .queue-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 2vh;
+  }
+  
+  .queue-number {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: bold;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .queue-number button {
+    margin-top: 10px;
+    background: #2E8B57;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    font-size: 1.4rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    /* width: 100%; */
+    width: vw;
+
+  }
+  
+  .queue-number.active button {
+    width: vw;
+    background: #C70039;
+  }
+  
+  .queue-number button:hover {
+    transform: scale(1.1);
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 8vh;
+    right: 1vw;
+    background-color: transparent;
+    border: 2px solid #35b2c0;
+    color: #35b2c0;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .back-button:hover {
+    background-color: #35b2c0;
+    color: white;
+    transform: scale(1.05);
+  }
+  

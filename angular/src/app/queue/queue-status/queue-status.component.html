@@ -1,0 +1,23 @@
+<label class="custom-label"> Queue status</label>
+<button class="back-button" (click)="back()"> ➡️ Back</button>
+
+<div class="queue-container">
+  <mat-card class="queue-card">
+    <mat-card-title class="queue-title">👥 Regular Queue</mat-card-title>
+    <div class="queue-list">
+      @for (q of pQueue; track $index) {
+      <div class="queue-number">{{ q.number | RsymbolPipe }}</div>
+
+      }
+    </div>
+  </mat-card>
+
+  <mat-card class="queue-card">
+    <mat-card-title class="queue-title">🌟 Special Queue</mat-card-title>
+    <div class="queue-list">
+      @for (q of sQueue; track $index) {
+      <div class="queue-number">{{ q.number | SsymbolPipe }}</div>
+      }
+    </div>
+  </mat-card>
+</div>

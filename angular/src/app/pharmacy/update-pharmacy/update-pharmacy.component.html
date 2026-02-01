@@ -1,0 +1,44 @@
+
+ <label class="custom-label" style="font-size: 10vh;">Update pharmacy</label>
+
+ <mat-card class="update-pharmacy-card" style="top: -7vh;">
+    <mat-card-title class="card-title">🔄 Update Pharmacy</mat-card-title>
+  
+    <form [formGroup]="myForm" (ngSubmit)="update()">
+      
+      <mat-form-field appearance="fill" class="form-field">
+        <mat-label>Password</mat-label>
+        <input matInput id="password" formControlName="password" placeholder="Enter password" type="password" />
+        @if(myForm.get('password')?.invalid && myForm.get('password')?.touched){
+        <mat-error >
+          invalid!
+        </mat-error>}
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill" class="form-field">
+        <mat-label>Station Count</mat-label>
+        <input matInput id="stationCount" formControlName="stationCount" placeholder="Enter station count" />
+        @if(myForm.get('stationCount')?.invalid && myForm.get('stationCount')?.touched){
+        <mat-error>
+          invalid!
+        </mat-error>}
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill" class="form-field">
+        <mat-label>Pharmacy Password</mat-label>
+        <input matInput id="pharmacyPassword" formControlName="pharmacyPassword" placeholder="Enter pharmacy password" type="password" />
+        @if(myForm.get('pharmacyPassword')?.invalid && myForm.get('pharmacyPassword')?.touched){
+        <mat-error >
+          invalid!
+        </mat-error>}
+      </mat-form-field>
+  
+      <button mat-raised-button color="primary" type="submit" [disabled]="myForm.invalid">
+        Update Pharmacy
+      </button>
+    </form>
+  </mat-card>
+
+  <button class="back-button" (click)="back()"> ➡️ Back</button>
+
+  

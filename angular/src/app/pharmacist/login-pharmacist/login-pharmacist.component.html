@@ -1,0 +1,26 @@
+
+<label class="custom-label" style="font-size: 10vh;">login as pharmacist</label>
+
+
+<div class="form-container">
+    <form [formGroup]="myForm" (ngSubmit)="loginPharmacy()">
+        <mat-form-field appearance="fill" class="input-field">
+            <mat-label>Enter Name</mat-label>
+            <input matInput id="name" formControlName="name" placeholder="Enter name">
+            <mat-error *ngIf="myForm.get('name')?.invalid && myForm.get('name')?.touched">Invalid!</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="input-field">
+            <mat-label>Enter Password</mat-label>
+            <input matInput id="password" formControlName="password" type="password" placeholder="Enter password">
+            <mat-error *ngIf="myForm.get('password')?.invalid && myForm.get('password')?.touched">Invalid!</mat-error>
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" type="submit" [disabled]="myForm.invalid" class="submit-button">Login</button>
+    </form>
+</div>
+
+
+<button class="back-button" (click)="back()"> ➡️ Back</button>
+
+
