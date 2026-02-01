@@ -1,61 +1,55 @@
-💊 Pharmacy Queue Management System
-📖 Description
+# 💊 Pharmacy Queue Management System
+## 📖 Description
 
-Pharmacy Queue Management System is a full-stack application built with C#, .NET Core, Angular 19, and SQL Server, designed to efficiently manage queues in a pharmacy.
+**Pharmacy Queue Management System is** a full-stack application built with **C#**, **.NET Core**, **Angular 19**, and **SQL Server**, designed to efficiently manage queues in a pharmacy.
 
-This project was developed as a collaborative effort and demonstrates real-time updates, role-based interfaces, and database connectivity.
+This project was developed as a **collaborative effort** and demonstrates **real-time updates**, **role-based interfaces**, and **database connectivity**.
 
-⚠️ Note: To run this project, you need a local SQL Server database. Update the connection string in appsettings.json to match your server settings (server name, database name, and authentication credentials).
+>⚠️ **Note:** To run this project, you need a local SQL Server database. Update the connection string in appsettings.json to match your server settings (server name, database name, and authentication credentials).
 
-📌 Features
+##📌 Features
 
-🧑‍💻 Role-based interfaces:
+🧑‍💻 **Role-based interfaces:**
 
-👤 User Interface – View queue status and join the queue
+👤 **User Interface** – View queue status and join the queue
 
-💊 Pharmacist Interface – Manage the queue and serve customers
+💊 **Pharmacist Interface** – Manage the queue and serve customers
 
-🛠️ Admin Interface – Manage users, pharmacists, and system settings
+🛠️ **Admin Interface** – Manage users, pharmacists, and system settings
 
-⏱️ Real-time queue management:
+⏱️ **Real-time queue management:**
 
-⚡ Instant updates
+⚡ **Instant updates**
 
-🔄 Asynchronous handling
+🔄 **Asynchronous handling**
 
-🌐 Synchronization across all interfaces
+🌐 **Synchronization across all interfaces**
 
-🔒 Authentication & Security:
+🔒 **Authentication & Security:**
 
-🛡️ JWT Token-based authentication
+🛡️ **JWT Token-based authentication**
 
-🗄️ Database:
+🗄️ **Database:**
 
-💾 SQL Server backend
+💾 **SQL Server backend**
 
-📊 Stores queue data, user info, and role-specific data
+📊 **Stores queue data, user info, and role-specific data**
 
-⚙️ Technology Stack
+##⚙️ Technology Stack
 
-Backend: C# with .NET Core
+**Backend:** C# with .NET Core
 
-Frontend: Angular 19
+**Frontend:** Angular 19
 
-Database: SQL Server
+**Database:** SQL Server
 
-Security: JWT Token authentication
+**Security:** JWT Token authentication
 
-💻 Screenshots / Demo
+##🛠️ Installation & Setup
+1. **Clone the repository**
+git clone https://github.com/tamarshraiber/PharmacyQueueManagement
 
-🌐 Project Repository
-
-⚠️ Tip: Add screenshots or GIFs of your app in action to make the README visually appealing.
-
-🛠️ Installation & Setup
-1. Clone the repository
-git clone <repository-url>
-
-2. Set up your SQL Server database
+2. **Set up your SQL Server database**
 
 Create the required database
 
@@ -63,26 +57,26 @@ Run db.script.sql to generate tables and initial data
 
 Update the connection string in appsettings.json with your server name, database name, and authentication credentials
 
-3. Run the backend
+3. **Run the backend**
 dotnet run
 
-4. Navigate to the Angular frontend folder
+4. **Navigate to the Angular frontend folder**
 cd frontend-folder
 npm install
 ng serve
 
-5. Open the application
+5. **Open the application**
 
 Open your browser and navigate to:
 
-http://localhost:4200
+**http://localhost:4200**
 
-🚀 Usage
+##🚀 Usage
 
-Users: Join the queue and see their position in real-time
+**Users:** Join the queue and see their position in real-time
 
-Pharmacists: Manage the queue and serve customers efficiently
+**Pharmacists:** Manage the queue and serve customers efficiently
 
-Admins: Monitor the system, manage users, and configure settings
+**Admins:** Monitor the system, manage users, and configure settings
 
-⚠️ Tip: Ensure your database connection is correct before running. All actions are secured via JWT authentication.
+>⚠️ **Tip:** Ensure your database connection is correct before running. All actions are secured via JWT authentication.
