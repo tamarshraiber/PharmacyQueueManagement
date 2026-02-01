@@ -7,7 +7,11 @@ This project was developed as a **collaborative effort** and demonstrates **real
 
 >⚠️ **Note:** To run this project, you need a local SQL Server database. Update the connection string in appsettings.json to match your server settings (server name, database name, and authentication credentials).
 
-##📌 Features
+
+---
+
+
+## 📌 Features
 
 🧑‍💻 **Role-based interfaces:**
 
@@ -35,7 +39,11 @@ This project was developed as a **collaborative effort** and demonstrates **real
 
 📊 **Stores queue data, user info, and role-specific data**
 
-##⚙️ Technology Stack
+
+---
+
+
+## ⚙️ Technology Stack
 
 **Backend:** C# with .NET Core
 
@@ -45,7 +53,11 @@ This project was developed as a **collaborative effort** and demonstrates **real
 
 **Security:** JWT Token authentication
 
-##🛠️ Installation & Setup
+
+---
+
+
+## 🛠️ Installation & Setup
 1. **Clone the repository**
 git clone https://github.com/tamarshraiber/PharmacyQueueManagement
 
@@ -71,8 +83,11 @@ Open your browser and navigate to:
 
 **http://localhost:4200**
 
-##🚀 Usage
 
+---
+
+
+## 🚀 Usage
 **Users:** Join the queue and see their position in real-time
 
 **Pharmacists:** Manage the queue and serve customers efficiently
